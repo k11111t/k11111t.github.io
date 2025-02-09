@@ -41,16 +41,19 @@ export default function ValentineComponent() {
         </button>
         <motion.button
           className="px-6 py-3 bg-red-500 text-white font-bold text-lg rounded-lg shadow-lg relative"
-          onMouseEnter={() => !isTouch && setFlipped(true)}
-          onMouseLeave={() => !isTouch && setFlipped(false)}
-          onTouchStart={() => setFlipped(true)}
           style={{
             transformStyle: "preserve-3d",
             position: "relative",
           }}
-          onClick={() => setShowButtons(false)}
+          onClick={() => {setFlipped(true); flipped && setShowButtons(false)}}
+          animate={{ rotateY: flipped ? 180 : 0 }}
+          transition={{ duration: 0.3 }}
         >
-          <span>
+          <span
+            style={{
+                display: "inline-block",
+                transform: flipped ? "rotateY(180deg)" : "none",
+            }}>
             {flipped ? "Yes ❤️" : "No 💔"}
           </span>
         </motion.button>
