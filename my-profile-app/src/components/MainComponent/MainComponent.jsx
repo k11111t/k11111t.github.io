@@ -12,7 +12,7 @@ const MainComponent = () => {
             {/* Navbar */}
             <nav className={styles.navbar}>
                 <div className={styles.navbarContainer}>
-                    <a className={styles.navbarBrand} href="#">VH</a>
+                    <a className={styles.navbarBrand} href="#">Home</a>
                     <button
                         className={styles.navbarToggler}
                         aria-label="Toggle navigation"
@@ -48,13 +48,14 @@ const MainComponent = () => {
             {/* Hero Section */}
             <main className={styles.hero}>
                 <p className={styles.intro}>Hi, my name is</p>
-                <h1 className={styles.name}>Viet Hung.</h1>
-                <h2 className={styles.tagline}>I build things for the web.</h2>
+                <h1 className={styles.name}>Viet Hung</h1>
+                <h2 className={styles.tagline}>I'm a fullstack software developer</h2>
                 <p className={styles.description}>
-                    I'm a frontend developer specializing in building exceptional digital experiences. 
-                    Currently, I'm focused on creating accessible, human-centered products.
-                </p>
-                <a href="#work" className={styles.ctaButton}>Check out my work!</a>
+                I have experience in C# .NET, Blazor, React, and Azure. I specialize in building scalable, 
+                high-performance applications and creating innovative solutions for complex problems. Passionate 
+                about clean code, agile methodologies, and continuous learning, I'm always looking for new challenges 
+                to improve my skills and make an impact.</p>
+                {/* <a href="#work" className={styles.ctaButton}>Check out my work!</a> */}
             </main>
         </div>
     );
