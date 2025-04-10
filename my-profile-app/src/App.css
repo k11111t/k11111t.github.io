@@ -1,20 +1,17 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+:root {
+    --primary-color: #d2b48c; /* Cream Brown */
+    --background-color: #0f0f0f; /* Black */
+    --text-color: #ffffff; /* White */
+    --secondary-text-color: #a9a9a9; /* Dark Gray */
+    --font-family: 'Roboto Mono', monospace, sans-serif;
+    
+    line-height: 1.5;
+    font-weight: 400;
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+    color-scheme: light dark;
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
