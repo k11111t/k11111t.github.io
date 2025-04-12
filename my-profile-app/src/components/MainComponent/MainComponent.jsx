@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './MainComponent.module.css';
 import NavbarComponent from '../NavbarComponent/NavbarComponent';
+import AboutComponent from '../AboutComponent/AboutComponent';
 
 const MainComponent = () => {
     return (
@@ -13,9 +14,14 @@ const MainComponent = () => {
                 <h2 className={styles.tagline}>I'm a fullstack software developer</h2>
                 <p className={styles.description}>
                 Experienced in C#.NET, Blazor, React.js, and Azure Cloud. I build scalable apps, write clean code, and thrive in agile teams—always eager to learn and take on new challenges.</p>
-                {/* <a href="#work" className={styles.ctaButton}>Check out my work!</a> */}
+
+                <AboutComponent />
             </main>
+
+            
         </div>
+
+        
     );
 };
 

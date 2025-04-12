@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import jumpingCat from '../assets/jumping-gatito.gif'
-import spinningCat from '../assets/cat-oiiaoiia-cat.gif'
+import jumpingCat from '../../assets/jumping-gatito.gif'
+import spinningCat from '../../assets/cat-oiiaoiia-cat.gif'
 import style from './ValentineComponent.module.css'
 
 export default function ValentineComponent() {

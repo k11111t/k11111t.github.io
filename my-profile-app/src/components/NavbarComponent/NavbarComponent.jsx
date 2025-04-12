@@ -7,7 +7,7 @@ const NavbarComponent = () => {
         setNavbarVisible(!navbarVisible);
     };
 
-    const [navbarVisible, setNavbarVisible] = useState(false);
+    const [navbarVisible, setNavbarVisible] = useState(window.innerWidth > 768);
 
     return (
         <nav className={styles.navbar}>
