@@ -2,7 +2,7 @@
     --primary-color: #d2b48c; /* Cream Brown */
     --background-color: #0f0f0f; /* Black */
     --text-color: #ffffff; /* White */
-    --secondary-text-color: #a9a9a9; /* Dark Gray */
+    --secondary-text-color: #BDBDBD; /* Dark Gray */
     --font-family: 'Roboto Mono', monospace, sans-serif;
     
     line-height: 1.5;
@@ -19,4 +19,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }

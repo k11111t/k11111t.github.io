@@ -1,0 +1,43 @@
+.header {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    margin-bottom: 1rem;
+}
+
+.subHeader {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.125rem;
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.techStack {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.techList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.techItem {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
