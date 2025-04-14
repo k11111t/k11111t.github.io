@@ -3,7 +3,7 @@ import styles from './TechStackComponent.module.css';
 
 const TechStackComponent = () => {
     return (
-        <div>  
+        <section id="experience">  
             <h1 className={styles.header}>Tech Stack</h1>
             
             <div className={styles.techStack}>
@@ -39,7 +39,7 @@ const TechStackComponent = () => {
                 </div>
             </div>
             
-        </div>
+        </section>
     );
 };
 

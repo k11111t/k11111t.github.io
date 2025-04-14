@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: var(--background-color);
+    background: transparent;
     padding: 1rem 2rem 0 2rem;
 }
 

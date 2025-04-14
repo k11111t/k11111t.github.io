@@ -3,8 +3,8 @@ import styles from './AboutComponent.module.css';
 
 const AboutComponent = () => {
     return (
-        <div>
-            <h1 className={styles.header}>About Me</h1>
+        <section>
+            <h1 className={styles.header}  id="about">About Me</h1>
             <p className={styles.description}>
             I'm Viet Hung Dang, a software engineer based in Manchester with a First Class BSc in Computer Science from 
             The University of Manchester. I started programming in high school, and that passion turned into a career 
@@ -15,7 +15,7 @@ const AboutComponent = () => {
             Previously, I enhanced warehouse systems at Dematic, ensuring performance and reliability for clients like ASOS.
             </p>
 
-        </div>
+        </section>
 
     );
 };

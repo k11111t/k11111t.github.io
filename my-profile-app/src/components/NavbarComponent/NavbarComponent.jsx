@@ -11,7 +11,7 @@ const NavbarComponent = () => {
 
     return (
         <nav className={styles.navbar}>
-            <div className={styles.navbarContainer}>
+        <div className={styles.navbarContainer} style={{ background: window.innerWidth <= 768 ? 'var(--background-color)' : 'transparent' }}>
                 <a className={styles.navbarBrand} href="#">VH</a>
                 <button
                     className={styles.navbarToggler}

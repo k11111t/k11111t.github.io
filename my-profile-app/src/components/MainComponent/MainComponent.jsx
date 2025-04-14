@@ -4,6 +4,7 @@ import NavbarComponent from '../NavbarComponent/NavbarComponent';
 import AboutComponent from '../AboutComponent/AboutComponent';
 import ProjectsComponent from '../ProjectsComponent/ProjectsComponent';
 import TechStackComponent from '../TechStackComponent/TechStackComponent';
+import ContactComponent from '../ContactComponent/ContactComponent';
 
 const MainComponent = () => {
     return (
@@ -23,6 +24,7 @@ const MainComponent = () => {
                 <AboutComponent />
                 <TechStackComponent/>
                 <ProjectsComponent />
+                <ContactComponent />
             </main>
 
             

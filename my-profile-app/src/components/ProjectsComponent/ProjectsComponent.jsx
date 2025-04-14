@@ -3,7 +3,7 @@ import styles from './ProjectsComponent.module.css';
 
 const ProjectsComponent = () => {
     return (
-        <div>
+        <section id="projects">
             <h1 className={styles.header}>Projects</h1>
 
             <h2 className={styles.subheader}>
@@ -24,7 +24,7 @@ const ProjectsComponent = () => {
                 The project uses WebSocket for real-time communication and has a clean and responsive UI.
             </p>
 
-        </div>
+        </section>
 
     );
 };
