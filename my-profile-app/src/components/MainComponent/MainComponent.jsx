@@ -1,63 +1,36 @@
 import React from 'react';
 import styles from './MainComponent.module.css';
+import NavbarComponent from '../NavbarComponent/NavbarComponent';
+import AboutComponent from '../AboutComponent/AboutComponent';
+import ProjectsComponent from '../ProjectsComponent/ProjectsComponent';
+import TechStackComponent from '../TechStackComponent/TechStackComponent';
+import ContactComponent from '../ContactComponent/ContactComponent';
 
 const MainComponent = () => {
-    const toggleNavbar = () => {
-        const collapse = document.querySelector(`.${styles.navbarCollapse}`);
-        collapse.classList.toggle(styles.show);
-    };
-
     return (
         <div className={styles.container}>
-            {/* Navbar */}
-            <nav className={styles.navbar}>
-                <div className={styles.navbarContainer}>
-                    <a className={styles.navbarBrand} href="#">Home</a>
-                    <button
-                        className={styles.navbarToggler}
-                        aria-label="Toggle navigation"
-                        onClick={toggleNavbar}
-                    >
-                        <span className={styles.navbarTogglerIcon}></span>
-                        <span className={styles.navbarTogglerIcon}></span>
-                        <span className={styles.navbarTogglerIcon}></span>
-                    </button>
-                    <div className={styles.navbarCollapse}>
-                        <ul className={styles.navbarNav}>
-                            <li className={styles.navItem}>
-                                <a className={styles.navLink} href="#about">About</a>
-                            </li>
-                            <li className={styles.navItem}>
-                                <a className={styles.navLink} href="#experience">Experience</a>
-                            </li>
-                            <li className={styles.navItem}>
-                                <a className={styles.navLink} href="#work">Work</a>
-                            </li>
-                            <li className={styles.navItem}>
-                                <a className={styles.navLink} href="#contact">Contact</a>
-                            </li>
-                            <li className={styles.navItem}>
-                                 <a href="/resume.pdf" className={styles.resumeButton}>Resume</a>
-                            </li>
-                        </ul>
-                        
-                    </div>
-                </div>
-            </nav>
+            <NavbarComponent />
 
-            {/* Hero Section */}
             <main className={styles.hero}>
-                <p className={styles.intro}>Hi, my name is</p>
-                <h1 className={styles.name}>Viet Hung</h1>
-                <h2 className={styles.tagline}>I'm a fullstack software developer</h2>
-                <p className={styles.description}>
-                I have experience in C# .NET, Blazor, React, and Azure. I specialize in building scalable, 
-                high-performance applications and creating innovative solutions for complex problems. Passionate 
-                about clean code, agile methodologies, and continuous learning, I'm always looking for new challenges 
-                to improve my skills and make an impact.</p>
-                {/* <a href="#work" className={styles.ctaButton}>Check out my work!</a> */}
+                <>
+                    <p className={styles.intro}>Hi, my name is</p>
+                    <h1 className={styles.name}>Viet Hung</h1>
+                    <h2 className={styles.tagline}>I'm a fullstack software developer</h2>
+                    <p className={styles.description}>
+                        Experienced in C#.NET, Blazor, React.js, and Azure Cloud. I build scalable apps, write clean code, 
+                        and thrive in agile teams—always eager to learn and take on new challenges.
+                    </p>
+                </>
+                <AboutComponent />
+                <TechStackComponent/>
+                <ProjectsComponent />
+                <ContactComponent />
             </main>
+
+            
         </div>
+
+        
     );
 };
 

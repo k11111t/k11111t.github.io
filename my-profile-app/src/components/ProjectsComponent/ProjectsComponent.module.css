@@ -1,0 +1,38 @@
+.projectWrapper {
+    padding: 2%;
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    margin-bottom: 1rem;
+}
+
+.subHeader {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.125rem;
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.demoImageDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.demoImage {
+    max-width: 90%;
+}
+
+.whiteLink {
+    color: white;
+}
