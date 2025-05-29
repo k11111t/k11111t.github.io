@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './TechStackComponent.module.css';
+import styles from "./TechStackComponent.module.css";
 
 const TechStackComponent = () => {
     return (
